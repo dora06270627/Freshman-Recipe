@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link id ="pageStyle" rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+</head>
+<body onload=pageOnload()>
+
+
+<div id="wrapper">
+
+    <header id="header" role="banner">
+        <div class="container">
+            <div class="header-inner">
+                <h1><a href="index.html">FRESHMAN<span>.</span></a></h1>
+                <nav role="navigation" id="nav-wrap">
+
+                    <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+                    <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+                    <ul id="nav" class="nav">
+                        <li><a href="category.html">Categories</a></li>
+                        <li><a href="15MinuteMeals.html">15-Minute Meals</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li class="cta"><a href="yourRecipe.html">Your Recipes</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div id="bgAccount">
+
+    </div>
+        <div class="text-center categoryheader"><h2 id="category">Category</h2></div>
+
+        <div class="container">
+        <div class="row"> 
+            <div class="col-sm-3 showCategory"><a href="#bakery"><img src="images/cupcake.jpg" class="img-circle" alt="Cinque Terre" ></a>
+                <p class="text-left">BAKERY</p></div>
+            <div class="col-sm-3 showCategory"><a href="#italian"><img src="images/italian.jpg" class="img-circle" alt="Cinque Terre" width="300" height="230"></a>
+                <p class="text-left">ITALIAN</p></div>
+            <div class="col-sm-3 showCategory"><a href="#thai"><img src="images/thaisoup.jpg" class="img-circle" alt="Cinque Terre" width="300" height="230"></a>
+                <p class="text-left">THAI</p></div>
+            <div class="col-sm-3 showCategory"><a href="#korean"><img src="images/bibambup.jpg" class="img-circle" alt="Cinque Terre" width="300" height="230"></a>
+                <p class="text-left">KOREAN</p></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3 showCategory"><a href="#japan"><img src="images/ramen.jpg" class="img-circle" alt="Cinque Terre" width="300" height="230"></a>
+                <p class="text-left">JAPANESE</p></div>
+            <div class="col-sm-3 showCategory"><a href="#china"><img src="images/sichuan.jpg" class="img-circle" alt="Cinque Terre" width="300" height="230"></a>
+                <p class="text-left">CHINESE</p></div>
+            <div class="col-sm-3 showCategory"><a href="#indian"><img src="images/indian.jpg" class="img-circle" alt="Cinque Terre" width="300" height="230"></a>
+                <p class="text-left">INDIAN</p></div>
+            <div class="col-sm-3 showCategory"><a href="#"><img src="images/drinks.jpg" class="img-circle" alt="Cinque Terre" width="300" height="230"></a>
+                <p class="text-left">DRINKS</p></div>
+        </div>
+
+       <div class="maincontent">
+        <div id="bakery">
+        <div class="text-left"><span style="font-family:times new roman,times,serif;"><h2>Bakery</h2></span></div>
+        <div class="row">
+            
+            <div class="col-sm-4 showRecipes-grid card">
+                <a href="#">
+                <img src="images/apple%20tart.jpeg" class="img-rounded" onclick=put("bakery") alt="" width="360" height="250" >
+                </a>
+                <h4 class="card-title">Apple Tart</h4>
+                <h5 class="text-muted"><i class="fa fa-clock-o" aria-hidden="true"></i>90mins</h5>
+            </div>
+
+            <div class="col-sm-4 showRecipes-grid card">
+                <a href="#">
+                <img src="images/chocolate cookie.jpg" class="img-rounded" alt="Cinque Terre" onclick=put("bakery") width="360" height="250" >
+                </a>
+                <h4 class="card-title">Chocolate Chip Cookie</h4>
+                <h5 class="text-muted"><i class="fa fa-clock-o" aria-hidden="true"></i>120mins</h5>
+            </div>
+
+            <div class="col-sm-4 showRecipes-grid card">
+                <a href="#">
+                    <img src="images/pumpkin pie.jpg" class="img-rounded" onclick=put("bakery") alt="Cinque Terre" width="360" height="250" >
+                </a>
+                <h4 class="card-title">Pumpkin Pie</h4>
+                <h5 class="text-muted"><i class="fa fa-clock-o" aria-hidden="true"></i>100mins</h5>
+            </div>
+        </div>
+
+                
+        </div>
+
+        <div id="italian">
+        <div class="text-left"><span style="font-family:times new roman,times,serif;"><h2>Italian</h2></span></div>
+        <div class="row">
+
+            <div class="col-sm-4 showRecipes-grid card">
+                <a href="easyPasta.html">
+                    <img src="images/spicy%20spagetti.jpg" class="img-rounded" onclick=put("italian") alt="Cinque Terre" width="360" height="250" >
+                </a>
+                <h4 class="card-title">Spicy Arrabiata Penne</h4>
+                <h5 class="text-muted"><i class="fa fa-clock-o" aria-hidden="true"></i>15mins</h5>
+            </div>
+
+            <div class="col-sm-4 showRecipes-grid card">
+                <a href="#">
+                    <img src="images/chicken.jpg" class="img-rounded" onclick=put("italian") alt="Cinque Terre" width="360" height="250" >
+                </a>
+                <h4 class="card-title">Chicken Spaghetti</h4>
+                <h5 class="text-muted"><i class="fa fa-clock-o" aria-hidden="true"></i>18mins</h5>
+            </div>
+
+            <div class="col-sm-4 showRecipes-grid card">
+                <a href="#">
+                    <img src="images/spagetti.jpg" class="img-rounded" onclick=put("italian") alt="Cinque Terre" width="360" height="250" >
+                </a>
+                <h4 class="card-title">Spaghetti Cacio</h4>
+                <h5 class="text-muted"><i class="fa fa-clock-o" aria-hidden="true"></i>100mins</h5>
+            </div>
+        </div>   
+                
+        </div>
+
+        <div id="thai">
+        <div class="text-left"><span style="font-family:times new roman,times,serif;"><h2>Thai food</h2></span></div>
+        <div class="row">
+
+            <div class="col-sm-4 showRecipes-grid card">
+                <a href="Pad%20Thai.html">
+                    <img src="images/pad%20thai.jpg" class="img-rounded" onclick=put("thai") alt="Cinque Terre" width="360" height="250" >
+                </a>
+                <h4 class="card-title">Pad Tahi</h4>
+                <h5 class="text-muted"><i class="fa fa-clock-o" aria-hidden="true"></i>14mins</h5>
+            </div>
+
+            <div class="col-sm-4 showRecipes-grid card">
+                <a href="#">
+                    <img src="images/mangorice.jpg" class="img-rounded" onclick=put("thai") alt="Cinque Terre" width="360" height="250" >
+                </a>
+                <h4 class="card-title">Mango Rice</h4>
+                <h5 class="text-muted"><i class="fa fa-clock-o" aria-hidden="true"></i>30mins</h5>
+            </div>
+
+            <div class="col-sm-4 showRecipes-grid card">
+                <a href="#">
+                    <img src="images/thai%20soup.jpg" class="img-rounded" onclick=put("thai") alt="Cinque Terre" width="360" height="250" >
+                </a>
+                <h4 class="card-title">Coconut Soup</h4>
+                <h5 class="text-muted"><i class="fa fa-clock-o" aria-hidden="true"></i>25mins</h5>
+            </div>
+        </div>   
+                
+        </div>
+
+        <div id="korean">
+        <div class="text-left"><span style="font-family:times new roman,times,serif;"><h2>Korean</h2></span></div>
+        <div class="row">
+
+                <div class="col-sm-4 showRecipes-grid card">
+                    <a href="Korean%20Tofu.html">
+                        <img src="images/tofu%20stew.jpg" class="img-rounded" onclick=put("korean") alt="" >
+                    </a>
+                    <h4 class="card-title">Korean Soft Tofu Stew</h4>
+                    <h5 class="text-muted"><i class="fa fa-clock-o" aria-hidden="true"></i>20mins</h5>
+                </div>
+
+
+            <div class="col-sm-4 showRecipes-grid card">
+                <a href="#">
+                    <img src="images/bibambup.jpg" class="img-rounded" onclick=put("korean") alt="Cinque Terre" width="360" height="250" >
+                </a>
+                <h4 class="card-title">Bibimbap</h4>
+                <h5 class="text-muted"><i class="fa fa-clock-o" aria-hidden="true"></i>15mins</h5>
+            </div>
+
+            <div class="col-sm-4 showRecipes-grid card">
+                <a href="#">
+                    <img src="images/korean%20beef.jpg" class="img-rounded" onclick=put("korean") alt="Cinque Terre" width="360" height="250" >
+                </a>
+                <h4 class="card-title">BBQ Beef</h4>
+                <h5 class="text-muted"><i class="fa fa-clock-o" aria-hidden="true"></i>25mins</h5>
+            </div>
+            </div>
+        </div>   
+                
+        </div>
+
+        <div id="japan">
+        <div class="text-left"><span style="font-family:times new roman,times,serif;"><h2>Japanese</h2></span></div>
+        <div class="row">
+
+            <div class="col-sm-4 showRecipes-grid card">
+                <a href="Chicken%20Katsu.html">
+                    <img src="images/katsu.jpg" class="img-rounded" onclick=put("japan") alt="Cinque Terre" width="360" height="250" >
+                </a>
+                <h4 class="card-title">Chicken Katsu</h4>
+                <h5 class="text-muted"><i class="fa fa-clock-o" aria-hidden="true"></i>20mins</h5>
+            </div>
+            <div class="col-sm-4 showRecipes-grid card">
+                <a href="#">
+                    <img src="images/sushi.jpg" class="img-rounded" onclick=put("japan") alt="Cinque Terre" width="360" height="250" >
+                </a>
+                <h4 class="card-title">Smoked Salmon Sushi Roll</h4>
+                <h5 class="text-muted"><i class="fa fa-clock-o" aria-hidden="true"></i>15mins</h5>
+            </div>
+            <div class="col-sm-4 showRecipes-grid card">
+                <a href="#">
+                    <img src="images/udon.jpg" class="img-rounded" onclick=put("japan") alt="Cinque Terre" width="360" height="250" >
+                </a>
+                <h4 class="card-title">Udon Miso Noodle Soup</h4>
+                <h5 class="text-muted"><i class="fa fa-clock-o" aria-hidden="true"></i>20mins</h5>
+            </div>
+        </div>   
+                
+        </div>
+
+        <div id="china">
+        <div class="text-left"><span style="font-family:times new roman,times,serif;"><h2>Chinese Cuisine</h2></span></div>
+        <div class="row">
+
+
+                <div class="col-sm-4 showRecipes-grid card">
+                    <a href="Kung-Pao.html">
+                        <img src="images/kung-pao-chicken.jpg" class="img-rounded" onclick=put("china") alt="" >
+                    </a>
+                    <h4 class="card-title">Kung-Pao Chicken</h4>
+                    <h5 class="text-muted"><i class="fa fa-clock-o" aria-hidden="true"></i>30mins</h5>
+                </div>
+
+            <div class="col-sm-4 showRecipes-grid card">
+                <a href="#">
+                    <img src="images/fried%20rice.jpg" class="img-rounded" onclick=put("china") alt="Cinque Terre" width="360" height="250" >
+                </a>
+                <h4 class="card-title">Shrimp Fried Rice</h4>
+                <h5 class="text-muted"><i class="fa fa-clock-o" aria-hidden="true"></i>25mins</h5>
+            </div>
+            <div class="col-sm-4 showRecipes-grid card">
+                <a href="#">
+                    <img src="images/ma%20po%20tofu.jpg" class="img-rounded" onclick=put("china") alt="Cinque Terre" width="360" height="250" >
+                </a>
+                <h4 class="card-title">Mapo Tofu</h4>
+                <h5 class="text-muted"><i class="fa fa-clock-o" aria-hidden="true"></i>20mins</h5>
+            </div>
+        </div>
+        </div>
+        <div id="indian">
+        <div class="text-left"><span style="font-family:times new roman,times,serif;"><h2>Indian Cuisine</h2></span></div>
+        <div class="row">
+
+            <div class="col-sm-4 showRecipes-grid card">
+                <a href="#">
+                    <img src="images/indian%20curry.jpg" class="img-rounded" onclick=put("indian") alt="Cinque Terre" width="360" height="250" >
+                </a>
+                <h4 class="card-title">Chicken Curry</h4>
+                <h5 class="text-muted"><i class="fa fa-clock-o" aria-hidden="true"></i>35mins</h5>
+            </div>
+            <div class="col-sm-4 showRecipes-grid card">
+                <a href="#">
+                    <img src="images/indian%20chicken.jpg" class="img-rounded" onclick=put("indian") alt="Cinque Terre" width="360" height="250" >
+                </a>
+                <h4 class="card-title">Apricot Chicken With Balsamic Vinegar</h4>
+                <h5 class="text-muted"><i class="fa fa-clock-o" aria-hidden="true"></i>25mins</h5>
+            </div>
+            <div class="col-sm-4 showRecipes-grid card">
+                <a href="#">
+                    <img src="images/samosa.jpg" class="img-rounded" onclick=put("indian") alt="Cinque Terre" width="360" height="250" >
+                </a>
+                <h4 class="card-title">Veggie Samosas</h4>
+                <h5 class="text-muted"><i class="fa fa-clock-o" aria-hidden="true"></i>15mins</h5>
+            </div>
+        </div>
+        </div>
+                
+
+        <div id="drink" >
+        <div class="text-left"><span style="font-family:times new roman,times,serif;"><h2>drinks</h2></span></div>
+        <div class="row">
+
+            <div class="col-sm-4 showRecipes-grid card">
+                <a href="#">
+                    <img src="images/Lemonede.jpg" class="img-rounded" onclick=put("drink") alt="Cinque Terre" width="360" height="250" >
+                </a>
+                <h4 class="card-title">Lemonede</h4>
+                <h5 class="text-muted"><i class="fa fa-clock-o" aria-hidden="true"></i>25mins</h5>
+                </div>
+
+            <div class="col-sm-4 showRecipes-grid card">
+                <a href="#">
+                    <img src="images/Straberry.jpg" class="img-rounded" onclick=put("drink") alt="Cinque Terre" width="360" height="250" >
+                </a>
+                <h4 class="card-title">Straberry Smoothie</h4>
+                <h5 class="text-muted"><i class="fa fa-clock-o" aria-hidden="true"></i>10mins</h5>
+            </div>
+            <div class="col-sm-4 showRecipes-grid card">
+                <a href="#">
+                    <img src="images/Margaritas.jpg" class="img-rounded" onclick=put("drink") alt="Cinque Terre" width="360" height="250" >
+                </a>
+                <h4 class="card-title">Margaritas</h4>
+                <h5 class="text-muted"><i class="fa fa-clock-o" aria-hidden="true"></i>20mins</h5>
+            </div>
+
+
+        </div>
+  </div>
+ </div>
+        </div>
+
+</div>
+    <footer>
+
+        <div class="row">
+
+            <a class="hvr-bounce-to-top" href="#">Check other recipes</a>
+
+            <ul class="social-links">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-skype"></i></a></li>
+            </ul>
+
+            <ul class="copyright">
+                <li>&copy; 2016  <a href="index.html" title="FRESHMAN." target="_blank">FRESHMAN.</a></li>
+                <li>Design by <a title="Freshman" href="index.html">FRESHMAN.</a></li>
+                <li><a title="about" href="about.html">About Us</a></li>
+                <li><a title="contact" href="contact.html">Contact Us</a></li>
+                <li>Visit Times:</li>
+                <span id="visit-times"><a title="visit">##NOT LOADED##</a></span><span> time(s).</span>
+                <script>
+                    var numTimes = localStorage.getItem("visits-n");
+                    if(numTimes == null) {
+                        numTimes = 0;
+                    } else {
+                        numTimes = parseInt(numTimes, 10);
+                    }
+                    numTimes++;
+                    localStorage.setItem("visits-n", (numTimes).toString(10))
+                    document.getElementById("visit-times").textContent = numTimes.toString(10);
+                </script>
+
+            </ul>
+
+
+        </div>
+
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

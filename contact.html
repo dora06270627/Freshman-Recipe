@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact Freshman</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link id ="pageStyle" rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+<div id="contactPage">
+
+
+    <header id="header" role="banner">
+        <div class="container">
+            <div class="header-inner">
+                <h1><a href="index.html">FRESHMAN<span>.</span></a></h1>
+                <nav role="navigation" id="nav-wrap">
+
+                    <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+                    <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+                    <ul id="nav" class="nav">
+                        <li><a href="category.html">Categories</a></li>
+                        <li><a href="15MinuteMeals.html">15-Minute Meals</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact US</a></li>
+                        <li class="cta"><a href="yourRecipe.html">Your Recipes</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div id="bgcontact">
+
+    </div>
+
+
+
+    <div id="contact">
+        <h2 class="text-center">CONTACT</h2>
+        <div class="row">
+            <div class="col-sm-5">
+                <p>Contact us with any time!.</p>
+                <p><span class="glyphicon glyphicon-map-marker"></span> Seattle, US</p>
+                <p><span class="glyphicon glyphicon-phone"></span> +01 2066120000</p>
+                <p><span class="glyphicon glyphicon-envelope"></span> freshman@gmail.com</p>
+            </div>
+
+            <div class="col-sm-7 slideanim">
+                <form id="contactform">
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="name" name="name" placeholder="Name" type="text" required onkeypress="checkLetter()" >
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                    </div>
+                </div>
+                <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5" required></textarea><br>
+                <div class="row">
+                    <div class="col-sm-12 form-group">
+                        <button class="btn btn-default pull-right" type="submit">Send</button>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="map"></div>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZ21OH32wqAx9pFY8FWbZtM80nZnRgpcc&callback=initMap">
+    </script>
+</div>
+<footer>
+
+    <div class="row">
+
+        <a class="hvr-bounce-to-top" href="#">Check other recipes</a>
+
+        <ul class="social-links">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa fa-skype"></i></a></li>
+        </ul>
+
+        <ul class="copyright">
+            <li>&copy; 2016  <a href="index.html" title="FRESHMAN." target="_blank">FRESHMAN.</a></li>
+            <li>Design by <a title="Freshman" href="index.html">FRESHMAN.</a></li>
+            <li><a title="about" href="about.html">About Us</a></li>
+            <li><a title="contact" href="contact.html">Contact Us</a></li>
+            <li>Visit Times:</li>
+            <span id="visit-times"><a title="visit">##NOT LOADED##</a></span><span> time(s).</span>
+            <script>
+                var numTimes = localStorage.getItem("visits-n");
+                if(numTimes == null) {
+                    numTimes = 0;
+                } else {
+                    numTimes = parseInt(numTimes, 10);
+                }
+                numTimes++;
+                localStorage.setItem("visits-n", (numTimes).toString(10))
+                document.getElementById("visit-times").textContent = numTimes.toString(10);
+            </script>
+
+        </ul>
+
+
+    </div>
+
+</footer>
+
+<script src="index.js"></script>
+
+</body>
+</html>

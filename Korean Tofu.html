@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Korean Tofu Stew</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link id ="pageStyle" rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+<div id="recipesPage">
+    <header id="header" role="banner">
+        <div class="container">
+            <div class="header-inner">
+                <h1><a href="index.html">FRESHMAN<span>.</span></a></h1>
+                <nav role="navigation" id="nav-wrap">
+
+                    <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+                    <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+                    <ul id="nav" class="nav">
+                        <li><a href="category.html">Categories</a></li>
+                        <li><a href="15MinuteMeals.html">15-Minute Meals</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li class="cta"><a href="yourRecipe.html">Your Recipes</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div id="bgAccount">
+    </div>
+
+    <div class="grid_recipes">
+        <div class="col-md-6 image-container1">
+            <img src="images/tofu stew.jpg" class="img-responsive" alt=""/>
+        </div>
+        <div class="col-md-6 content-wrap1">
+            <h2>Korean Soft Tofu Stew</h2>
+            <p>Thick and great for winter dish- 2 servings.</p>
+            <a class="hvr-bounce-to-top" href="#">Check other recipes</a>
+        </div><!-- /.col-md-6 -->
+        <div class="clearfix"> </div>
+    </div>
+
+    <div class="container" id="main" ng-controller="dndCtrl">
+        <div class="menu_box">
+            <!--Column-->
+            <div class="col-md-4 col_1">
+                <!--Block-->
+                <div class="title-icon"><span class="icon_2">1</span></div>
+                <div class="title"><h3>− Ingredients −</h3></div>
+
+                    <ol data-draggable="target">
+                        <li data-draggable="item">1 (12 ounce) package Korean soon tofu or soft tofu, drained and sliced</li>
+                        <li data-draggable="item">1 teaspoon Korean chile powder</li>
+                        <li data-draggable="item">1 tablespoon Korean soy bean paste (doenjang)</li>
+                        <li data-draggable="item">1 egg</li>
+                        <li data-draggable="item">1 green onion, chopped</li>
+                        <li data-draggable="item">salt and pepper to taste</li>
+                        <li data-draggable="item">2 tablespoons ground beef</li>
+                    </ol>
+
+            </div>
+            <!--Column-->
+            <div class="col-md-4 col_1">
+                <!--Menu Block-->
+                <div class="title-icon"><span class="icon_2">2</span></div>
+                <div class="title"><h3>− Directions  −</h3></div>
+                <div>Stir in the Korean chile powder and ground beef. Cook and stir until the beef is crumbly, evenly browned, and no longer pink. Stir in the soy bean paste, coating the beef. Pour in the water and bring to a boil. Season with salt and pepper. Gently drop tofu into the soup and continue cooking until the tofu is heated through, 1 to 2 minutes. Remove from heat and quickly add the egg into the soup, stirring gently to break it up. Garnish with sesame seeds and green onion.</div>
+                <button id="count-down" onclick="countDown(15)">start counting down</button>
+                <span id="time">15:00</span>
+            </div>
+            <div class="col-md-4 col_1">
+                <!--Menu Block-->
+                <div class="title-icon"><span class="icon_2">3</span></div>
+                <div class="title"><h3>− You Made It −</h3></div>
+
+                <ol data-draggable="target">
+
+                </ol>
+
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+
+</div>
+<footer>
+
+    <div class="row">
+
+        <a class="hvr-bounce-to-top" href="#">Check other recipes</a>
+
+        <ul class="social-links">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa fa-skype"></i></a></li>
+        </ul>
+
+        <ul class="copyright">
+            <li>&copy; 2016  <a href="index.html" title="FRESHMAN." target="_blank">FRESHMAN.</a></li>
+            <li>Design by <a title="Freshman" href="index.html">FRESHMAN.</a></li>
+            <li><a title="about" href="about.html">About Us</a></li>
+            <li><a title="contact" href="contact.html">Contact Us</a></li>
+            <li>Visit Times:</li>
+            <span id="visit-times"><a title="visit">##NOT LOADED##</a></span><span> time(s).</span>
+            <script>
+                var numTimes = localStorage.getItem("visits-n");
+                if(numTimes == null) {
+                    numTimes = 0;
+                } else {
+                    numTimes = parseInt(numTimes, 10);
+                }
+                numTimes++;
+                localStorage.setItem("visits-n", (numTimes).toString(10))
+                document.getElementById("visit-times").textContent = numTimes.toString(10);
+            </script>
+
+        </ul>
+
+
+    </div>
+
+</footer>
+
+<script src="index.js"></script>
+
+</body>
+</html>
